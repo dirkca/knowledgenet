@@ -4024,5 +4024,12 @@ function xmldb_core_upgrade($oldversion=0) {
         }
     }
 
+    if ($oldversion < 2015030419) {
+        // Add a site default portfolio page template
+        log_debug('Add a site default portfolio page template');
+        require_once('view.php');
+        install_system_portfolio_view();
+    }
+
     return $status;
 }
