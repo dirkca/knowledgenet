@@ -1,0 +1,31 @@
+/**
+ * CSS rules for the page status plugin
+ *
+ * @author     Catalyst IT Ltd
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL version 3 or later
+ * @copyright  For copyright information on Mahara, please see the README file distributed with this software.
+
+ * This file is distributed under the same terms as Mahara itself
+ */
+ 
+
+.pagestatusblock div {
+    padding: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1.25em;
+    color: #3d3d3d;
+}
+.pagestatusblock .notset {
+    background: #d9edf7 url(../images/status_notset.png) no-repeat right 50%;
+}
+.pagestatusblock .inprogress {
+    background: #fcf1e3 url(../images/status_inprogress.png) no-repeat right 50%;
+}
+.pagestatusblock .needhelp {
+    background: #fceee3 url(../images/status_needhelp.png) no-repeat right 50%;
+}
+.pagestatusblock .ready {
+    background: #f5fee4 url(../images/status_ready.png) no-repeat right 50%;
+}
