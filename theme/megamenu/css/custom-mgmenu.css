@@ -1,0 +1,39 @@
+/*CUSTOM*/
+.mgmenu_container,
+.mgmenu_fixed,
+.mgmenu_footer {
+	width:100%;
+	height: 41px;
+	z-index:10;
+    background: #51732F;
+    background: -webkit-linear-gradient(top, #51732F 0%, #1f1f1f 100%);
+    background: -moz-linear-gradient(top, #51732F 0%, #1f1f1f 100%);
+    background: -o-linear-gradient(top, #51732F 0%, #1f1f1f 100%);
+    background: -ms-linear-gradient(top, #51732F 0%, #1f1f1f 100%);
+    background: linear-gradient(top, #51732F 0%, #1f1f1f 100%);
+}
+
+.top-container{
+    width:100%;
+    float:left;
+    background-color:#c0c0c0;
+    position:relative;
+}
+.top-container-left{
+    float:left;
+    width:14%;
+    margin-top:15px;
+    padding:0 5px;
+}
+
+.top-container-middle{
+    float:left; 
+    width:60%; 
+    position: absolute; 
+    bottom: -1px; 
+    left: 14%;
+}
+.top-container-right{
+    float:right; 
+    width:25%;
+}

@@ -1,0 +1,258 @@
+ 
+/*---------------------------
+*          Header
+-----------------------------*/ 
+.top-container{
+    width:100%;
+    float:left;
+    background-color:#FFFFFF;
+    position:relative;
+    
+}
+@media screen and (min-width: 300px) {
+        .top-container-left{ 
+            float:left;
+            width:25%;
+            margin:0 auto;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:100%; 
+            position: relative; 
+            bottom: 1px; 
+            right: 0px;
+        }
+        .top-container-right{ 
+            float:right; 
+            width:70%;
+        }
+}
+@media screen and (min-width: 700px) {
+        .top-container-left{ 
+            float:left;
+            width:15%;
+            margin:0 auto;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:80%; 
+            position: relative; 
+            bottom: 1px; 
+
+            right: 0px;
+        }
+        .top-container-right{
+            float:right; 
+            width:70%;
+        }
+}
+
+@media screen and (min-width: 900px) {
+        .top-container-left{ 
+            float:left;
+            width:9%;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:89%; 
+            position: absolute; 
+            bottom: 1px; 
+            margin-left:12%;
+            right: 0px;
+        }
+        .top-container-right{
+            float:right; 
+            width:25%;
+        }
+}
+
+
+
+
+/*---------------------------
+*    Mahara Main navigation
+-----------------------------*/ 
+
+
+#nav-container{ 
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    float:left;
+}
+#nav-container-left{ border:0px solid red;
+    width:100%;
+    float:left;
+}
+#nav-container-center{ border:0px solid blue;
+    float: right;
+    text-align:center;
+    width:100%;
+  
+}
+#nav-container-right{ border:0px solid magenta;
+    width:100%;
+    float: right;
+    text-align:right;
+
+}
+
+ /**   Search form */ 
+#nav-container-right input#usf_query{border:1px solid #d5ecff;
+    width: 200px;
+    padding: 7px 3px 4px;
+    border-radius: 4px 0px 0px 4px;
+
+}
+#nav-container-right input#usf_submit.submit{
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    #nav-container-center{ 
+        width:44%;
+        float: right;
+        text-align: left;
+    }  
+    #nav-container-right{
+        width:44%;
+        float: left;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    #nav-container-left{ border:0px solid red;
+        width:73%;
+    }
+    #nav-container-center{ border:0px solid blue;
+        width:25%;
+        margin-left:0px;
+        text-align:right;
+    }    
+    #nav-container-right{ border:0px solid magenta;
+        width:100%;
+        max-width: 1280px;
+        margin-left:0px;
+        background: #fff none repeat scroll 0 0;
+    }
+}
+
+
+/*Move nav left for ::before icons*/
+
+.main-nav li {
+    margin: 0 0 0px 15px;
+}    
+/*
+
+.main-nav .dropdown-sub li a,
+.main-nav .dropdown-sub li a:link,
+.main-nav .dropdown-sub li a:visited,
+.main-nav .dropdown-sub li a:active {
+    margin-left: 12px;
+}
+*/
+    
+.main-nav li.selected {
+    background: #D5ECFF;
+    margin: 0 0 0px 15px;
+}
+
+.main-nav .dropdown-sub {
+    left: 15px;
+}
+
+
+
+/*Icons before main menu items*/
+
+li.interaction.dropdown-nav-home::before{
+    content: url('static/images/wonderings.png');
+    display:block;
+    float:left;
+    margin: 4px 0px 1px 5px;
+    background: transparent;
+}
+li.selected.interaction.dropdown-nav-home::before{
+    padding-bottom: 3px;
+  /*  border-bottom: 3px solid #064C7E;*/
+}
+
+li.groups.dropdown-nav-home::before{
+    content: url('static/images/knowledge-teams.png');
+    display:block;
+    float:left;
+    margin: 3px 0px 1px 5px;
+    background: transparent;
+}
+li.selected.groups.dropdown-nav-home::before{
+  padding-bottom: 5px; 
+    /*border-bottom: 3px solid #064C7E;*/
+}
+
+
+li.myportfolio.dropdown-nav-home::before{
+    content: url('static/images/idea-builds.png');
+    display:block;
+    float:left;
+    margin: 4px 0px 1px 5px;
+    background: transparent;
+}
+li.selected.myportfolio.dropdown-nav-home::before{
+    padding-bottom: 3px;
+    /*border-bottom: 3px solid #064C7E;*/
+}
+
+li.curricular-resources.dropdown-nav-home::before{
+    content: url('static/images/curricular-resources.png');
+    display:block;
+    float:left;
+    margin: 4px 0px 1px 5px;
+    background: transparent;
+}
+li.selected.curricular-resources.dropdown-nav-home::before{
+    padding-bottom: 3px;
+    /*border-bottom: 3px solid #064C7E;*/
+}
+
+/*---------------------------
+*    Content
+-----------------------------*/ 
+
+h1, h2 {
+    color: #375d81;
+}
+
+
+tr.submitcancel input.submit, tr.submitcancel input.cancel, tr.submit input.submit, tr.submit input.cancel, input#profileform_submit, input#files_filebrowser_edit_artefact, input#files_filebrowser_edit_cancel, input#instconf_folder_edit_artefact, input#instconf_folder_edit_cancel, input#instconf_artefactids_edit_artefact, input#instconf_artefactids_edit_cancel, input#instconf_artefactid_edit_artefact, input#instconf_artefactid_edit_cancel, .rbuttons .btn, .rbuttons .btn:visited, .rbuttons .btn:link, .rbuttons input.submit, #resumewrap input.openedit, #resumewrap button, #view-wizard-controls input.submit, .submitwrap input.submit, #editaccess_submit_container input.submitcancel, #collectiondonewrap .btn, #collectiondonewrap .btn:visited, #collectiondonewrap .btn:link, input#export_submit, #sitelicenses .btn, #adduser #adduser_submit, input#login_submit, .login-externallink a.btn, input#viewlayout_submit, input#files_filebrowser_upload, input#designskinform_submit, input#cancel_designskinform_submit, input#import_submit {
+    background: #375d81 url("http://mahara.ctb.ro/theme/knowledgenet-v2/static/images/btn_bkgd-blue.png") repeat-x scroll 0 50%;
+    border-color: #375d81;
+    color: #ffffff;
+}
+
+
+tr.submitcancel input.submit:hover, tr.submitcancel input.cancel:hover, tr.submit input.submit:hover, tr.submit input.cancel:hover, input#profileform_submit:hover, input#files_filebrowser_edit_artefact:hover, input#files_filebrowser_edit_cancel:hover, input#instconf_folder_edit_artefact:hover, input#instconf_folder_edit_cancel:hover, input#instconf_artefactids_edit_artefact:hover, input#instconf_artefactids_edit_cancel:hover, input#instconf_artefactid_edit_artefact:hover, input#instconf_artefactid_edit_cancel:hover, .rbuttons .btn:hover, .rbuttons input.submit:hover, #resumewrap input.openedit:hover, #resumewrap button:hover, #view-wizard-controls input.submit:hover, .submitwrap input.submit:hover, #editaccess_submit_container input.submitcancel:hover, #collectiondonewrap .btn:hover, input#export_submit:hover, #sitelicenses .btn:hover, #adduser #adduser_submit:hover, input#login_submit:hover, .login-externallink a.btn:hover, input#viewlayout_submit:hover, input#files_filebrowser_upload:hover, input#designskinform_submit:hover, input#cancel_designskinform_submit:hover, input#import_submit:hover {
+    background: rgba(0, 0, 0, 0) url("http://mahara.ctb.ro/theme/knowledgenet-v2/static/images/btn_bkgd-blue-hover.png") repeat-x scroll 0 50%;
+    border-color: #375d81;
+    color: #ffffff;
+}
+
+.form-switch .switch-inner::before {
+    background-color: #375d81;
+
+    }
+
+
+/*Footer pagination*/
+div.pagination a {
+    background-color: #d5ecff;
+    
+}    
+/*END custom */

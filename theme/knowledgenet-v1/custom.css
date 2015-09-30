@@ -1,0 +1,199 @@
+ 
+/*---------------------------
+*          Header
+-----------------------------*/ 
+.top-container{
+    width:100%;
+    float:left;
+    background-color:#FFFFFF;
+    position:relative;
+    
+}
+@media screen and (min-width: 300px) {
+        .top-container-left{ 
+            float:left;
+            width:25%;
+            margin:0 auto;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:100%; 
+            position: relative; 
+            bottom: 1px; 
+            right: 0px;
+        }
+        .top-container-right{ 
+            float:right; 
+            width:70%;
+        }
+}
+@media screen and (min-width: 700px) {
+        .top-container-left{ 
+            float:left;
+            width:15%;
+            margin:0 auto;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:80%; 
+            position: relative; 
+            bottom: 1px; 
+
+            right: 0px;
+        }
+        .top-container-right{
+            float:right; 
+            width:70%;
+        }
+}
+
+@media screen and (min-width: 900px) {
+        .top-container-left{ 
+            float:left;
+            width:9%;
+            padding:5px;
+        }
+
+        .top-container-middle{
+            float:right; 
+            width:89%; 
+            position: absolute; 
+            bottom: 1px; 
+            margin-left:12%;
+            right: 0px;
+        }
+        .top-container-right{
+            float:right; 
+            width:25%;
+        }
+}
+
+
+
+
+/*---------------------------
+*    Mahara Main navigation
+-----------------------------*/ 
+ /**   Search form */ 
+
+#usf.pieform{
+    width:99%;
+    margin:0 auto;
+}
+#usf_query{
+    width:80%;
+    height:27px;
+    padding:1px 0;	
+}
+
+/*
+@media screen and (min-width: 550px) {
+    #usf_query{width:80%; }
+}
+
+@media screen and (min-width: 750px) {
+    #usf_query{width: 100%; }
+}
+*/
+
+#nav-container{
+    width:100%;
+}
+@media screen and (min-width: 300px) {
+    #nav-container-left{
+        width:100%;
+        float:left;
+    }
+    #nav-container-center{
+        width:100%;
+        float:left;
+        text-align:center;
+    }
+
+    #nav-container-right{
+        width:100%;
+        float:right;
+        text-align:right;
+    } 
+}        
+
+@media screen and (min-width: 600px) {
+        #nav-container-left{
+            width:100%;
+            
+        }
+        #nav-container-center{
+            width:60%;
+            float:left;
+            text-align:center;
+        }
+        #nav-container-right{
+            width:35%;
+            float:right;
+            text-align:right;
+            margin-right:1%;
+        } 
+}
+
+@media screen and (min-width: 799px) {
+
+        #nav-container-left{ 
+                    width:68%;
+                    float:left;
+        }
+        #nav-container-center{ 
+                    width:30%;
+                    float:left;                    
+        }
+
+        #nav-container-right{ 
+            width:100%;
+            float:right;
+            text-align:right;
+            margin-right:2%;
+        } 
+}
+
+@media screen and (min-width: 1000px) {
+
+        #nav-container-left{ 
+                    width:55%;
+                    float:left;
+        }
+        #nav-container-center{ 
+                    width:43%;
+                    float:right;
+        }
+
+        #nav-container-right{ 
+            width:100%;
+            float:right;
+            text-align:right;
+            margin-right:2%;
+        } 
+}
+@media screen and (min-width: 1200px) {
+
+        #nav-container-left{ 
+                    width:45%;
+                    float:left;
+        }
+        #nav-container-center{ 
+                    width:33%;
+                    float:left;
+        }
+
+        #nav-container-right{ 
+            width:20%;
+            float:right;
+            text-align:right;
+             margin-right:0%;
+        } 
+}
+
+
+/*END custom */
